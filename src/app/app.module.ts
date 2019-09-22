@@ -16,12 +16,12 @@ import {RouterModule,Routes} from '@angular/router'
   ],
   imports: [
     BrowserModule,
-    // RouterModule.forRoot([
-    //   {path:'',component:HomeComponent},
-    //   {path:'sponsors',component:SponsersComponent},
-    //   {path:'winner',component:WinnerComponent},
+    RouterModule.forRoot([
+      {path:'',component:HomeComponent},
+      {path:'sponsers',component:SponsersComponent},
+      {path:'winner',component:WinnerComponent},
 
-    // ])
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
