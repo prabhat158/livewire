@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WinnerComponent } from './winner/winner.component';
@@ -18,11 +19,10 @@ import {RouterModule,Routes} from '@angular/router'
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    BrowserModule,
-    RouterModule.forRoot([
 
-      // {path:'',component:HomeComponent},
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot([
       {path:'',component:HomeComponent},
       {path:'sponsors',component:SponsersComponent},
       {path:'winner',component:WinnerComponent},
